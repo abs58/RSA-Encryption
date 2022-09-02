@@ -18,6 +18,7 @@ else:
 #prompt for relevant information
 last = input("What is your last name as shown in Weber State's records?\n").title()
 first_weber = input("What is your first name as shown in Weber State's records?\n").title()
+first_nuames = ''
 if input("Does your first name in Weber State's records match the first name in NUAMES's records?(Y/n)\n").lower() in("no","n"):
 	first_nuames = input("What is your first name in NUAMES's records?\n").title()
 else:
@@ -56,4 +57,5 @@ code = rsa.encrypt(data.encode('ascii'), public)
 with open(f"students/{github}.dat",'wb') as f:
 	f.write(code)
 
-print("encrypted file created")
+print("encrypted file created"
+
